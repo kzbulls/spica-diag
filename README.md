@@ -1,0 +1,2 @@
+# spica-diag
+例
