@@ -17,9 +17,9 @@
   </div>
 
   <script>
-    // ▼ここにあなたの情報を入れてください
+    // ▼ URLのゴミを掃除しました！
     const MY_LIFF_ID = '2008882590-CYPYSTNq';
-    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfrWyA3ReUMtSc32hdvkfERz_R9h1cDRNK0EkD7zHcv_GYwWg/viewform?usp=header';
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfrWyA3ReUMtSc32hdvkfERz_R9h1cDRNK0EkD7zHcv_GYwWg/viewform';
     const ENTRY_ID = 'entry.1513418329';
 
     window.onload = function() {
@@ -29,7 +29,7 @@
             liff.login();
           } else {
             liff.getProfile().then(profile => {
-              // フォームへ転送
+              // フォームへ転送（ここがスムーズにつながるようになります）
               const finalUrl = `${GOOGLE_FORM_URL}?usp=pp_url&${ENTRY_ID}=${profile.userId}`;
               window.location.replace(finalUrl);
             });
